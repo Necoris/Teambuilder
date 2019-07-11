@@ -1,11 +1,15 @@
 <template>
  <nav>
-    <v-navigation-drawer
-      v-model="drawer"
-      clipped
-      fixed
-      app
-        >
+    <v-navigation-drawer  v-model="drawer" clipped fixed app> 
+      <v-layout column align-center>
+        <v-flex class="mt-3">
+          <v-avatar size="200">
+            <img src="/placeholder.png" >
+          </v-avatar>
+          <p class="text--white subheading mt-2 text-sm-center" >Necoris</p>
+        </v-flex>
+
+      </v-layout>   
       <v-list dense>
         <v-list-tile v-for="link in links" :key="link.text" router :to="link.route" @click="drawer = !drawer">
           <v-list-tile-action>
@@ -21,7 +25,7 @@
     <v-toolbar dark app clipped-left fixed>
       <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="headline text-uppercase">
-        <span>Team Builder</span>
+        <span>My Side</span>
         <span class="font-weight-light"> First Test Build</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
