@@ -5,6 +5,7 @@ import Profile from './views/Profile.vue'
 import Team from './views/Team.vue'
 import Login from './views/Login.vue'
 import Signout from './views/Signout.vue'
+import Team1 from './views/teams/Team1.vue'
 
 
 Vue.use(Router)
@@ -37,6 +38,11 @@ export default new Router({
       path: '/signout',
       name: 'Signout',
       component: Signout
+    },
+    {
+      path: '/teams/team1',
+      name: 'Team1',
+      component: Team1
     },
   ]
 })
