@@ -34,10 +34,11 @@ export default {
   components: {navigation},
 
   data () {
+    return {
+      count:0
+    }
 
   },
-  props: {
-      source: String
-    }    
+   
 }
 </script>
